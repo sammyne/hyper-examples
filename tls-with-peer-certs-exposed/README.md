@@ -1,4 +1,4 @@
-# hello-world-with-tcp-stream
+# tls-with-peer-certs-exposed
 
 ## 快速开始
 
@@ -42,3 +42,5 @@ AgGGMAoGCCqGSM49BAMCA0gAMEUCIQD62ptcuXT2RkPx0ORbenC5cDux31KB2Ypn
 
 ## 参考文献
 - [hyper-rustls-examples](https://github.com/rustls/hyper-rustls/tree/c64ea2103a282992a6b0373f0e944e1c8ef4f988/examples)
+- [hyper-issues#2463](https://github.com/hyperium/hyper/issues/2463#issuecomment-797093481)
+- [hyper/server/mod.rs#L118](https://github.com/hyperium/hyper/blob/v0.14.20/src/server/mod.rs#L118)
