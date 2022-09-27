@@ -1,0 +1,28 @@
+[package]
+name = "hello-world"
+version = "0.1.0"
+edition = "2021"
+
+default-run = "server"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+base64 = "0.13.0"
+futures-util = { version = "0.3.1", default-features = false }
+hyper-rustls = "0.23.0"
+rustls-pemfile = "1.0.1"
+tokio-stream = { version = "0.1", features = ["net"] }
+tokio-rustls = { version = "0.23", default-features = false }
+
+[dependencies.hyper]
+version = "0.14.20"
+features = ["full"]
+
+[dependencies.rustls]
+version = "0.20.6"
+features = ["dangerous_configuration"]
+
+[dependencies.tokio]
+version = "1.0"
+features = ["macros", "net", "rt-multi-thread", "io-std"]
